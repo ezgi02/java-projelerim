@@ -18,7 +18,7 @@ public class hesapmakinesi {
 		 return result;
 	}
 	static int divide(int a,int b) {
-		int result=a+b;
+		int result=a/b;
 		 System.out.println("bölme"+result);
 		 return result;
 	}
@@ -45,14 +45,14 @@ public class hesapmakinesi {
 	}
 	static int modding(int a,int b) {
 		
-		System.out.println("toplam"+a%b);
+		System.out.println("modu"+a%b);
 		return a%b;
 		
 	}
 	static int rectangle(int a,int b) {
 		int result=a*b;
 		int cevre=2*(a+b);
-		 System.out.println("toplam"+result+cevre);
+		 System.out.println("alan"+result+cevre);
 		 return result;
 	}
 
@@ -61,17 +61,17 @@ public class hesapmakinesi {
 		// TODO Auto-generated method stub
 		Scanner gir=new Scanner(System.in);
 		int select;
-		String menu="1- Toplama İşlemi\r\n"
-				+ "2- Çıkarma İşlemi\r\n"
-				+ "3- Çarpma İşlemi\r\n"
-				+ "4- Bölme işlemi\r\n"
-				+ "5- Üslü Sayı Hesaplama\r\n"
+		String menu="1- Toplama Islemi\r\n"
+				+ "2- Cikarma Islemi\r\n"
+				+ "3- Carpma Islemi\r\n"
+				+ "4- Bolme Islemi\r\n"
+				+ "5- UslU Sayi Hesaplama\r\n"
 				+ "6- Faktoriyel Hesaplama\r\n"
 				+ "7- Mod Alma\r\n"
-				+ "8- Dikdörtgen Alan ve Çevre Hesabı"
-				+ "9- Cıkıs yap";
+				+ "8- Dikdortgen Alan ve Cevre Hesabı\n"
+				+ "9- Cikis yap";
 		do {
-			System.out.println("bir islem seciniz");
+			System.out.println("bir islem seciniz"+menu);
 			select=gir.nextInt();
 			System.out.println("bir sayi giriniz");
 			int a=gir.nextInt();
